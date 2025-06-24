@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "build": "webpack",
+  "start": "webpack serve"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dakshesh29/restaurant-page.git"
