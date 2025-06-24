@@ -5,7 +5,7 @@ This is a simple and stylish restaurant website built using JavaScript, HTML, an
 ## Features
 
 - **Home Page**: Beautiful background image with welcoming intro text.
-- 🍕 **Menu Page**: Menu items displayed as cards with name, description, and price.
+- **Menu Page**: Menu items displayed as cards with name, description, and price.
 - **Contact Page**: A contact form to get in touch — includes name, email, subject, and message.
 - Stylish design with smooth hover effects and clean layout.
 
