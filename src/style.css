@@ -1,24 +1,200 @@
+/* Color Palette
+#feb326 - Bright Yellow
+#e84d8a - Pinkish
+#64c5eb - Light Blue
+#7f58af - Purple
+*/
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
   margin: 0;
-  padding: 0;
+  background-color: #FAF8F5;
+  color: #2C2C2C;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-  background-color: #333;
-  color: white;
+  background-color: #D58C4B;
   padding: 1rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-nav button {
-  margin-right: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #fff;
+button {
+  background-color: #C04A3C;
+  color: #fff;
   border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-nav button:hover {
-  background-color: #eee;
+button:hover {
+  background-color: #D58C4B;
+}
+
+.active-tab {
+  background-color: #89CFF0;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('./images/premium_vector-1713796081005-8332940118f9.avif');
+  
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh; /* changed from 100vh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 0; /* or adjust if header has fixed position */
+}
+
+.hero-text {
+  background: rgba(255, 255, 255, 0.15); /* translucent background */
+  backdrop-filter: blur(10px);  
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.hero-text h1 {
+  color: #feb326;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Menu Cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.containerContent {
+  background: rgba(255, 255, 255, 0.15); /* translucent background */
+  backdrop-filter: blur(10px);           /* blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+
+.containerContent:hover {
+  transform: scale(1.05);
+}
+
+.containerContent h3 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  color: #e84d8a; /* stylish pink accent */
+}
+
+.containerContent p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.containerContent span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #7f58af; /* nice purple accent for price */
+}
+
+
+.contact-section {
+  background: rgba(255, 255, 255, 0.1); /* transparent white */
+  backdrop-filter: blur(10px);          /* blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 500px;
+  margin: 5rem auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #f0f0f0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submitBtn {
+  padding: 0.75rem;
+  background-color: #e84d8a;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #c03e76;
 }
